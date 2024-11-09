@@ -1,0 +1,70 @@
+p#p1 {
+  color: yellow;
+  font-style: italic;
+  font-family: Arial;
+  background: green;
+}
+
+/* ================================ */
+
+body.bg-pagina-azul-claro {
+  background-color: lightblue;
+}
+
+p.bg-paragrafo-verde-claro {
+  background-color: lightgreen;
+}
+
+body.bg-imagem-repeticao-fixa {
+  background-image: url('img/bg.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+body.bg-imagem-repeticao-vertical {
+  background-image: url('img/bg.jpg');
+  background-repeat: repeat-y;
+}
+
+body.bg-imagem-sem-repeticao {
+  background-image: url('img/bg.jpg');
+  background-repeat: no-repeat;
+}
+
+body.bg-imagem-centralizada-sem-repeticao {
+  background-image: url('img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.bg-pagina-amarela-imagem-centralizada-fixa {
+  background: yellow url('sua-imagem.jpg') no-repeat center scroll;
+}
+
+/* ================================================================= */
+
+#arial-vermelha {
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+#times-22-verde {
+  font-family: Times, serif;
+  font-size: 22px;
+  color: green;
+}
+
+#comic-20-azul-italico {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 20px;
+  color: blue;
+  font-style: italic;
+}
+
+#verdana-amarela-negrito {
+  font-family: Verdana, sans-serif;
+  color: yellow;
+  font-weight: bold;
+  font-size: 14px;
+  font-stretch: semi-condensed;
+}
