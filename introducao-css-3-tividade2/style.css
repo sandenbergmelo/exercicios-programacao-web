@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 :root {
@@ -13,6 +12,11 @@
   --cinza-claro: rgb(85, 85, 122);
   --cinza-clarissimo: rgb(200, 200, 200);
   --vermelho: rgb(196, 23, 12);
+}
+
+hr {
+  height: 1px;
+  color: var(--cinza-clarissimo);
 }
 
 header.cabecalho {
@@ -27,6 +31,7 @@ header.cabecalho {
 main.principal {
   font-family: var(--font);
   margin: 30px auto;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -36,11 +41,11 @@ main.principal {
 
 section.noticia {
   display: flex;
-  gap: 40px;
+  gap: 15px;
 }
 
 section.noticia img {
-  height: 200px;
+  height: 250px;
   border-radius: 10px;
 }
 
@@ -52,5 +57,26 @@ section.noticia aside {
 
 section.noticia aside h2 {
   color: var(--cinza-escuro);
-  font-size: 20px;
+  font-size: 18px;
+}
+
+section.noticia aside h3,
+section.noticia aside li {
+  color: var(--vermelho);
+}
+
+section.noticia aside h3 {
+  font-size: 30px;
+}
+
+section.noticia aside ul {
+  list-style-position: inside;
+}
+
+section.noticia aside ul li::marker {
+  color: var(--cinza-claro);
+}
+
+section.noticia aside footer {
+  color: var(--cinza-claro);
 }
