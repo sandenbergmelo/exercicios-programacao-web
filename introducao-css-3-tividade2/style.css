@@ -18,6 +18,21 @@
   --vermelho: rgb(196, 23, 12);
 }
 
+span.icon {
+  position: absolute;
+  margin: 25px 0px 0px 5px;
+  color: white;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 1.1em;
+  height: 50px;
+  vertical-align: bottom;
+}
+
+span.icon i {
+  font-size: 1.3em;
+}
+
 hr {
   height: 1px;
   color: var(--cinza-clarissimo);
