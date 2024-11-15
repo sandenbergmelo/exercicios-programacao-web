@@ -1,0 +1,23 @@
+.esqcima {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.dircima {
+  position: relative;
+  top: -160px;
+  left: calc(100% - 80px);
+}
+
+.esqbaixo {
+  position: relative;
+  left: 0;
+  top: calc(100vh - 160px);
+}
+
+.dirbaixo {
+  position: relative;
+  left: calc(100% - 80px);
+  top: calc(100vh - 320px);
+}

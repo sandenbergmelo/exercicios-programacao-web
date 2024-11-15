@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  height: 150px;
+  background-color: blue;
+}
+
+.nav {
+  height: 30px;
+  background-color: limegreen;
+}
+
+.esquerda {
+  width: 200px;
+  height: calc(100vh - 210px);
+  background-color: red;
+  float: left;
+}
+
+.main {
+  width: calc(100% - 400px);
+  height: calc(100vh - 210px);
+  background-color: aqua;
+  float: left;
+}
+
+.direita {
+  width: 200px;
+  height: calc(100vh - 210px);
+  background-color: brown;
+  float: right;
+}
+
+.footer {
+  height: 30px;
+  background-color: limegreen;
+  clear: both;
+}

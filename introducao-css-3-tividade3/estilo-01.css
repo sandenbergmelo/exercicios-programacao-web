@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.esqcima,
+.esqbaixo,
+.dirbaixo,
+.dircima {
+  height: 80px;
+  width: 80px;
+  padding: 0px;
+  margin: 0px8
+}
+
+.esqcima {
+  background-color: red;
+}
+
+.esqbaixo {
+  background-color: green;
+}
+
+.dircima {
+  background-color: yellow;
+}
+
+.dirbaixo {
+  background-color: blue;
+}
