@@ -6,14 +6,14 @@
 
 .dircima {
   position: relative;
-  top: -160px;
+  top: -80px;
   left: calc(100% - 80px);
 }
 
 .esqbaixo {
   position: relative;
   left: 0;
-  top: calc(100vh - 160px);
+  top: calc(100vh - 240px);
 }
 
 .dirbaixo {
