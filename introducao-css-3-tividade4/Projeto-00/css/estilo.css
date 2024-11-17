@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul: #61B3DE;
+  --azul-escuro: #1E90FF;
+  --cinza: #C0C0C0;
+  --laranja: #EE6123;
+}
+
+body {
+  background-color: var(--azul);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho nav.menu {
+  background-color: white;
+  height: 50px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.menu ul li {
+  padding: 10px;
+  cursor: pointer;
+  color: var(--cinza);
+}
+
+.menu li {
+  border-top: var(--cinza) 3px solid;
+}
+
+.menu li:first-child {
+  color: var(--laranja);
+  border-top: var(--laranja) 3px solid;
+}
+
+.menu li:last-child {
+  margin-left: auto;
+}
+
+.menu li:hover {
+  color: var(--laranja);
+  border-top: var(--laranja) 3px solid;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main h1 {
+  padding: 60px 0px;
+  font-size: 3em;
+  color: white;
+}
+
+
+.lista-de-produtos {
+  background-color: white;
+  margin: 40px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.produto {
+  background-color: var(--laranja);
+  padding: 10px;
+  text-align: center;
+}
+
+.produto img {
+  width: 300px;
+}
+
+.produto h2 {
+  font-size: 1.2em;
+  margin: 10px 0px;
+  color: white;
+}
+
+.produto p {
+  color: white;
+}
+
+.produto del {
+  font-size: 0.8em;
+}
+
+.btn-carrinho {
+  background-color: var(--azul);
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  transition: all 0.3s;
+}
+
+.btn-carrinho img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-carrinho:hover {
+  background-color: var(--azul-escuro);
+  transform: scale(1.2);
+}
+
+.rodape {
+  color: white;
+  height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.rodape a {
+  color: var(--laranja);
+  text-decoration: none;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+}
