@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+  max-width: 500px;
+}
+
+main h1 {
+  font-size: 1.5rem;
+}
+
+ol {
+  font-size: 1.2rem;
+}
+
+ol li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0367d1;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #003f83;
+}
+
+a:active {
+  color: #00274d;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.3rem;
+}
+
+form select {
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 2px;
+}
+
+form button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background-color: #0367d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #003f83;
+}
+
+form button:active {
+  background-color: #00274d;
+}
