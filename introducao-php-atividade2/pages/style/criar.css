@@ -1,0 +1,70 @@
+@import url('./colors.css');
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+label,
+p {
+  font-size: 1.3em;
+}
+
+span>label {
+  font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.5em;
+  font-size: 1.1em;
+  border-radius: 0.2em;
+  width: 500px;
+  outline: none;
+}
+
+button {
+  background: var(--green);
+  font-size: 1.1em;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+}
+
+button:hover {
+  background: var(--green-dark);
+}
+
+button:active {
+  background: var(--green-darker);
+}
+
+button[type="reset"] {
+  margin-top: 1em;
+  background: var(--yellow);
+}
+
+button[type="reset"]:hover {
+  background: var(--yellow-dark);
+}
+
+button[type="reset"]:active {
+  background: var(--yellow-darker);
+}
+
+button[type="button"] {
+  background: var(--red);
+}
+
+button[type="button"]:hover {
+  background: var(--red-dark);
+}
+
+button[type="button"]:active {
+  background: var(--red-darker);
+}

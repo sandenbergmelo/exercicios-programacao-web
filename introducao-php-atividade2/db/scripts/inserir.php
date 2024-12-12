@@ -3,18 +3,18 @@
 include __DIR__ . '/../Connection.php';
 $pdo = Connection::getConnection();
 
-$nome = "Alexandre Magno o Grande";
-$logradouro = "Um";
-$numero = "Dois";
-$bairro = "Tres";
-$cidade = "Quatro";
-$estado = "Cinco";
-$email = "alexandre@exemplo.com.br";
-$celular = "(99) 999999-9999";
-$status = 1;
+$nome = $_POST['nome'];
+$logradouro = $_POST['logradouro'];
+$numero = $_POST['numero'];
+$bairro = $_POST['bairro'];
+$cidade = $_POST['cidade'];
+$estado = $_POST['estado'];
+$email = $_POST['email'];
+$celular = $_POST['celular'];
+$status = $_POST['status'];
 
-$sql = "INSERT INTO contatos (nome, logradouro, numero, bairro, cidade, estado, email, celular, status)
-        VALUES (:nome, :logradouro, :numero, :bairro, :cidade, :estado, :email, :celular, :status)";
+$sql = "INSERT INTO contatos (nome, logradouro, numero, bairro, cidade, estado, email, celular, status) VALUES (:nome, :logradouro, :numero, :bairro, :cidade, :estado, :email, :celular, :status)";
+
 $stmt = $pdo->prepare($sql);
 
 $stmt->bindParam(':nome', $nome);
@@ -28,7 +28,7 @@ $stmt->bindParam(':celular', $celular);
 $stmt->bindParam(':status', $status);
 
 if ($stmt->execute()) {
-    echo "Dados inseridos com sucesso!\n";
+    header('Location: ../../pages/mensagem.php?sucesso=sucesso&mensagem=Contato inserido com sucesso');
 } else {
-    echo "Erro ao inserir os dados.";
+    header('Location: ../../pages/mensagem.php?sucesso=fracasso&mensagem=Erro ao inserir contato');
 }

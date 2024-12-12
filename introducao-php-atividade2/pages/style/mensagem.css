@@ -1,0 +1,26 @@
+@import url('./colors.css');
+
+section {
+  align-items: center;
+  background-color: var(--current-line);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  background: var(--green);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+}
+
+button:hover {
+  background: var(--green-dark);
+}
+
+button:active {
+  background: var(--green-darker);
+}
