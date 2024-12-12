@@ -9,7 +9,7 @@ try {
 
     $connection->exec($sql);
 
-    echo "Database created successfully\n";
+    echo "Database criado com sucesso\n";
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
