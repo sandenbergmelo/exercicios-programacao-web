@@ -1,3 +1,15 @@
+<?php
+
+$id = $_GET['id'] ?? null;
+
+if (!$id) {
+    header('location: mensagem.php?sucesso=sucesso&mensagem=Contato não encontrado');
+    exit;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

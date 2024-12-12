@@ -40,8 +40,8 @@ $dados = $result->fetchAll(PDO::FETCH_ASSOC);
                 echo "<td>{$linha['email']}</td>";
                 echo "<td>{$linha['celular']}</td>";
 
-                echo "<td class='a'><a href='atualizar.php?id={$linha['id']}'>[Alterar]</a> ";
-                echo "<a href='excluir.php?id={$linha['id']}'>[Excluir]</a></td>";
+                echo "<td class='a'><a href='../db/scripts/update.php?id={$linha['id']}'>[Alterar]</a> ";
+                echo "<a href='../db/scripts/excluir.php?id={$linha['id']}'>[Excluir]</a></td>";
                 echo "</tr>";
             }
             ?>
