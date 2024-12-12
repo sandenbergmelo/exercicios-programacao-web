@@ -4,6 +4,9 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  background-color: var(--selection);
+  padding: 20px;
+  border-radius: 0.5em;
 }
 
 label,
@@ -22,6 +25,7 @@ input[type="email"] {
   border-radius: 0.2em;
   width: 500px;
   outline: none;
+  border: none;
 }
 
 button {
@@ -42,19 +46,6 @@ button:hover {
 
 button:active {
   background: var(--green-darker);
-}
-
-button[type="reset"] {
-  margin-top: 1em;
-  background: var(--yellow);
-}
-
-button[type="reset"]:hover {
-  background: var(--yellow-dark);
-}
-
-button[type="reset"]:active {
-  background: var(--yellow-darker);
 }
 
 button[type="button"] {

@@ -39,7 +39,6 @@
             </span>
 
             <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
             <button type="button" onclick="window.location.href='../index.php'">Home</button>
         </form>
     </main>

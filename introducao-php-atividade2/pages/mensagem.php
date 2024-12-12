@@ -31,7 +31,7 @@ $mensagem = $_GET['mensagem'] ?? 'Mensagem não encontrada';
             }
             ?>
         </section>
-        <button onclick="window.location.href='criar.php'">Cadastrar outro</button>
+        <button onclick="window.location.href='criar.php'">Voltar para o formulário</button>
         <button onclick="window.location.href='../index.php'">Tela inicial</button>
     </main>
 </body>
