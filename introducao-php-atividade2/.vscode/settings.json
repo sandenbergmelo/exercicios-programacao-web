@@ -1,0 +1,21 @@
+{
+    "cSpell.words": [
+        "ERRMODE"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "Exercício 2",
+            "database": "AppAgendaWeb",
+            "username": "docker",
+            "password": "docker"
+        }
+    ]
+}
