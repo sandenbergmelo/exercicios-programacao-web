@@ -3,7 +3,9 @@
 include __DIR__ . '/../Connection.php';
 $pdo = Connection::getConnection();
 
-$id = $_POST['id'] ?? null;
+$id = $_REQUEST['id'] ?? null;
+
+var_dump($id);
 
 if (!$id) {
     header('Location: ../../pages/mensagem.php?sucesso=fracasso&mensagem=Erro ao atualizar contato');

@@ -2,7 +2,6 @@
 
 include __DIR__ . '/../Connection.php';
 
-// Faça a seed de dados na tabela contatos
 $dados = [
     [
         'nome' => 'Leonardo da Vinci',

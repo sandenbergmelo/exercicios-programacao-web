@@ -1,0 +1,48 @@
+@import url('./colors.css');
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:nth-child(1) {
+  color: var(--red);
+}
+
+a:nth-child(1):hover {
+  color: var(--red-dark);
+}
+
+a:nth-child(1):active {
+  color: var(--red-darker);
+}
+
+a:nth-child(2) {
+  color: var(--yellow);
+}
+
+a:nth-child(2):hover {
+  color: var(--orange);
+}
+
+a:nth-child(2):active {
+  color: var(--pink);
+}
+
+a:nth-child(3) {
+  color: var(--green);
+}
+
+a:nth-child(3):hover {
+  color: var(--green-dark);
+}
+
+a:nth-child(3):active {
+  color: var(--green-darker);
+}
